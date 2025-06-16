@@ -1,7 +1,16 @@
-# Projeto conversão de temperatura
+# 📘 Projeto Conversão de Temperatura (Português)
+### 🔍 Sobre o projeto
+O projeto Conversão de Temperatura é um exemplo desenvolvido com NodeJS. Ele tem como objetivo demonstrar a criação de ambientes com containers utilizando NodeJS.
 
-### Sobre o projeto
-O projeto conversão de temperatura é um projeto desenvolvido em NodeJS. O projeto tem como objetivo ser um exemplo para a criação de ambiente com containers usando NodeJS.
+### 🚀 Observações
+A aplicação é exposta na porta 8080.
 
-### Observações do projeto
-A aplicação é exposta usando a porta 8080
+<br/>
+<br/>
+
+# 📘 Temperature Conversion Project (English)
+### 🔍 About the Project
+The Temperature Conversion project is an example developed using NodeJS. Its purpose is to demonstrate how to create containerized environments with NodeJS.
+
+### 🚀 Notes
+The application is exposed on port 8080.
