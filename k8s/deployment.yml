@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: conversaotemperatura
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: conversaotemperatura
+  template:
+    metadata:
+      labels:
+        app: conversaotemperatura
+    spec:
+      containers:
+        - name: conversao
+          image: rukasu/node_temperature-converter:v3.0
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: conversaotemperatura
+spec:
+  selector:
+    app: conversaotemperatura
+  type: NodePort
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+      protocol: TCP
+      nodePort: 30000
